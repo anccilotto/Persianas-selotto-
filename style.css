@@ -135,6 +135,37 @@ nav ul a:hover::after{
     padding: 0 40px;
 }
 
+.faca-mais .faca-mais-text h3{
+    font-size: 56px;
+}
+
+.faca-mais .faca-mais-text p{
+    margin: 5px 0 10px 0;
+}
+
 .faca-mais .faca-mais-img{
     width: 50%;
+}
+
+.faca-mais .faca-mais-img img{
+    width: 100%;
+}
+
+.footer{
+    background-color: #4f9cf9;
+    text-align: center;
+}
+
+.footer i{
+    color: #4f9cf9;
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.footer p{
+    margin-top: 10px;
+    color: white;
 }
