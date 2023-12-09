@@ -73,6 +73,12 @@ nav{
 
 }
 
+nav img{
+    width: 200px;
+    
+}
+
+
 
 
 nav ul{
@@ -81,12 +87,20 @@ nav ul{
 }
 
 nav ul a{
-    color: white;
+    color: black;
     margin: 0 25px;
     text-transform: uppercase;
     font-size: 14px;
     display: block;
+    background-color: #4f9cf9;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
 }
+
+
 
 nav ul a:not(.btn)::after{
     content: "";
@@ -183,6 +197,75 @@ nav .close-icon{
     color: white;
 }
 
+.sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre .sobre-text{
+    width: 50%;
+    padding-right:  40px;
+}
+
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color: #000000a6;
+}
+
+.sobre .sobre-img{
+    width: 50%;
+}
+
+.sobre .sobre-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.banner .banner-text h1{
+    color: black;
+}
+
+.banner .banner-text p{
+    color: black;
+}
+
+.contato-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+}
+
+
+
+.contato-info .left-side{
+    width: 50%;
+    padding: 30px;
+    background-color: #4f9cf9;
+    border-radius: 14px;
+    margin-right: 50px;
+    height: fit-content;
+}
+
+.contato-info .left-side div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contato-info .left-side div i{
+    font-size: 24px;
+    margin-right: 20px;
+    color: white;
+}
+
+.contato-info .left-side p{
+    font-size: 17px;
+    color: white;
+}
+
+
 @media(max-width: 830px){
     .ul{
         position: fixed;
@@ -213,4 +296,67 @@ nav .close-icon{
         top: 46px;
         right: 28px;
     }
+
+    .faca-mais .faca-mais-text {
+        margin-top: 10px;
+        padding: 0 20px;
+        order: 1;
+    }
+
+    .faca-mais .container{
+        flex-direction: column;
+    }
+
+    .faca-mais .faca-mais-text h3{
+        font-size: 40px;
+    }
+
+    .faca-mais .faca-mais-text,
+    .faca-mais .faca-mais-img{
+        width: 100%;
+    }
+
+    .banner .banner-text{
+        padding: 0;
+        margin: 80px;
+    }
+
+    .banner .banner-text h1{
+        font-size: 80px;
+    }
+
+    .banner .banner-text p{
+        font-size: 15px;
+    }
+
+    .sobre .container{
+        flex-direction: column-reverse;
+    }
+
+    .sobre .sobre-img,
+    .sobre .sobre-text{
+        width: 100%;
+    }
+
+    .sobre .sobre-text{
+        margin-top: 40px;
+    }
+
+    .contato-info .left-side{
+        width: 100%;
+    }
+
 }
+
+@media (max-width:500px){
+    .banner .banner-text h1{
+        font-size: 50px;
+    }
+
+    .faca-mais .faca-mais-text h3{
+        font-size: 40px;
+    }
+}
+
+
+
